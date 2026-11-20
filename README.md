@@ -63,6 +63,24 @@ composer require masilia/ibexa-icons
    php bin/console masilia:icons:import config/packages/ibexa_admin_icons.yaml
    ```
 
+### With Symfony Flex
+
+The Masilia recipes do the first steps for you. Add their endpoint once to the `composer.json` of your project, after the one of Ibexa:
+
+```json
+"extra": {
+    "symfony": {
+        "endpoint": [
+            "https://api.github.com/repos/ibexa/recipes/contents/index.json?ref=flex/main",
+            "https://api.github.com/repos/MasiliaLabs/recipes/contents/index.json?ref=flex/main",
+            "flex://defaults"
+        ]
+    }
+}
+```
+
+Then `composer require masilia/ibexa-icons` enables the bundle and writes `config/routes/masilia_ibexa_icons.yaml`. What is left is yours: the migration, the admin build and the policies. The recipe prints these steps once the `auto-scripts` of Composer have run.
+
 ## Usage
 
 Open **Admin > Icons**: search or filter the list (by type or group, by where the icon comes from), choose the pencil on a row, search the icon set by name, pick a symbol and save. The change shows in the content tree at once. The other button takes a choice back: the YAML of the project, then Ibexa's default icon, answer again.
