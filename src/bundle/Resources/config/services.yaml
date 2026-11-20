@@ -1,0 +1,25 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Masilia\IbexaIcons\Icon\Sprite:
+        arguments:
+            $projectDir: '%kernel.project_dir%'
+            $cache: '@cache.app'
+
+    Masilia\IbexaIcons\Persistence\DoctrineIconRegistry:
+        arguments:
+            $cache: '@cache.app'
+    Masilia\Contracts\IbexaIcons\IconRegistry:
+        alias: Masilia\IbexaIcons\Persistence\DoctrineIconRegistry
+
+    # Asked by Ibexa before its own resolvers (the YAML is at priority 100 and below): an icon in the registry wins.
+    Masilia\IbexaIcons\Resolver\RegistryIconConfigResolver:
+        tags:
+            - { name: ibexa.site.config.resolver, priority: 200 }
+
+    Masilia\IbexaIcons\Icon\ContentModelScanner: ~
+
+    Masilia\Bundle\IbexaIcons\Command\:
+        resource: '../../Command/'

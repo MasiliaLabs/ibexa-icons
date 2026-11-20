@@ -1,0 +1,81 @@
+{
+    "name": "masilia/ibexa-icons",
+    "description": "The icons of the content types and groups of Ibexa, chosen at run time (registry, detection, icon picker, assistant) instead of YAML",
+    "keywords": [
+        "ibexa",
+        "ibexa-dxp",
+        "ibexa-5",
+        "symfony-bundle",
+        "icons",
+        "content-types",
+        "admin-ui"
+    ],
+    "homepage": "https://github.com/MasiliaLabs/ibexa-icons",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MasiliaLabs",
+            "homepage": "https://github.com/MasiliaLabs"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/MasiliaLabs/ibexa-icons/issues",
+        "source": "https://github.com/MasiliaLabs/ibexa-icons",
+        "security": "https://github.com/MasiliaLabs/ibexa-icons/security/policy"
+    },
+    "type": "ibexa-bundle",
+    "require": {
+        "php": ">=8.3",
+        "doctrine/doctrine-bundle": "^2.13",
+        "doctrine/doctrine-migrations-bundle": "^3.4",
+        "doctrine/orm": "^2.20 || ^3.0",
+        "ibexa/admin-ui": "^5.0",
+        "ibexa/core": "^5.0",
+        "psr/cache": "^3.0",
+        "symfony/config": "^7.4",
+        "symfony/console": "^7.4",
+        "symfony/dependency-injection": "^7.4",
+        "symfony/framework-bundle": "^7.4",
+        "symfony/string": "^7.4",
+        "symfony/http-kernel": "^7.4",
+        "symfony/yaml": "^7.4"
+    },
+    "require-dev": {
+        "masilia/ibexa-ai": "^2.3",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5",
+        "symfony/cache": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Masilia\\Bundle\\IbexaIcons\\": "src/bundle/",
+            "Masilia\\Contracts\\IbexaIcons\\": "src/contracts/",
+            "Masilia\\IbexaIcons\\": "src/lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Masilia\\IbexaIcons\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit",
+        "phpstan": "phpstan analyse --memory-limit=1G",
+        "test": [
+            "@phpunit",
+            "@phpstan"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    },
+    "suggest": {
+        "masilia/ibexa-ai": "The assistant finds and gives icons to content types and groups (icons.* capabilities)",
+        "masilia/ibexa-blocks": "Creates the content types and groups of a site: the icons of its socle are given by masilia:icons:defaults"
+    }
+}

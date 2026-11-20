@@ -1,0 +1,9 @@
+# What the assistant of masilia/ibexa-ai can do with icons. Loaded only when that package is installed; the bundle of ibexa-ai tags
+# every Capability it autoconfigures with masilia.ibexa_ai.capability.
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Masilia\IbexaIcons\Capability\:
+        resource: '../../../lib/Capability/'

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="home" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+<symbol
+   id="calendar" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+<symbol class="x" id="calendar-check" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+<symbol id="folder" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+<symbol id="user-add" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+<symbol id="text-paragraph" viewBox="0 0 32 32"><path d="M0 0"/></symbol>
+</svg>
