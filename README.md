@@ -147,6 +147,26 @@ vendor/bin/phpunit
 vendor/bin/phpstan analyse
 ```
 
+## Stay informed
+
+New versions are announced as **GitHub releases**, with their notes taken from the [CHANGELOG](CHANGELOG.md):
+
+- **On GitHub**: *Watch* this repository, *Custom*, *Releases*, to be notified of each release; or follow the feed `https://github.com/MasiliaLabs/ibexa-icons/releases.atom` in your reader.
+- **In your project**: `composer outdated "masilia/*"` lists what is behind. To be told by a pull request, let Dependabot (or Renovate) watch the Masilia packages:
+
+  ```yaml
+  # .github/dependabot.yml
+  version: 2
+  updates:
+    - package-ecosystem: composer
+      directory: /
+      schedule: { interval: weekly }
+      allow:
+        - dependency-name: "masilia/*"
+  ```
+
+- **Before updating**: the CHANGELOG says what changes; a change that breaks something is marked **Breaking** and explained in `UPGRADE.md` when there is one. Before 1.0, a minor version (`0.x`) may contain breaking changes: read the notes of the versions you skip. Security problems are announced as GitHub security advisories (see [SECURITY.md](SECURITY.md)).
+
 ## Support
 
 [GitHub issues](https://github.com/MasiliaLabs/ibexa-icons/issues). Security: see [SECURITY.md](SECURITY.md). Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md).

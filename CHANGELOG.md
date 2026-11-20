@@ -4,6 +4,9 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 
 ## [Unreleased]
 
+### Added
+- Docs: a Stay informed section in the README.
+
 ## [0.1.0] - 2026-11-20
 
 ### Added
