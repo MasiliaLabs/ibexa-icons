@@ -22,8 +22,11 @@
 {% endblock %}
 
 {% block content %}
-    {# The page is a React application: it loads its data from the JSON API. #}
-    <div id="masilia-icons-root" data-api="{{ path('masilia.ibexa_icons.api.data') }}"></div>
+    {# The container of the admin pages (the width, the margins and the card of every list of the admin), then the React application:
+       it loads its data from the JSON API. #}
+    <section class="container ibexa-container">
+        <div id="masilia-icons-root" data-api="{{ path('masilia.ibexa_icons.api.data') }}"></div>
+    </section>
 {% endblock %}
 
 {% block javascripts %}
