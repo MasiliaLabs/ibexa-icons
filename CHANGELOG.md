@@ -4,6 +4,8 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-11-20
+
 ### Added
 - Docs: a Stay informed section in the README.
 
@@ -16,5 +18,6 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 - The page Admin > Icons: the content types and groups with their icon and its origin, filters, and a panel to choose an icon among those of Ibexa. Policies `masilia_icon/view` and `masilia_icon/manage`, JSON API under `/api/masilia/icons`, texts in English and French.
 - Assistant capabilities `icons.list`, `icons.search` and `icons.set` when `masilia/ibexa-ai` is installed. A choice made in the admin is never replaced by the assistant, an import or the defaults.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/MasiliaLabs/ibexa-icons/releases/tag/0.1.0
