@@ -24,3 +24,24 @@ jobs:
             - run: composer install --no-interaction --prefer-dist --no-progress
             - run: vendor/bin/phpunit
             - run: vendor/bin/phpstan analyse --memory-limit=2G --no-progress
+
+    admin:
+        name: Admin scripts
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: src/bundle/Resources/public/admin
+        env:
+            MASILIA_ADMIN_KIT: ${{ github.workspace }}/ibexa-admin-kit/src/bundle/Resources/public/admin
+        steps:
+            - uses: actions/checkout@v4
+            # The components of the admin: the sources of masilia/ibexa-admin-kit, next to this repository.
+            - uses: actions/checkout@v4
+              with:
+                  repository: MasiliaLabs/ibexa-admin-kit
+                  path: ibexa-admin-kit
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: '24'
+            # The tests need no package: Node reads the TypeScript sources as they are.
+            - run: node --experimental-strip-types --import ./test-hooks/register.mjs --test icons/*.test.ts

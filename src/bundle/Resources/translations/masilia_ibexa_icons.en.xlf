@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="action.cancel" resname="action.cancel">
+        <source>action.cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="action.choose" resname="action.choose">
+        <source>action.choose</source>
+        <target>Choose an icon for “%name%”</target>
+      </trans-unit>
+      <trans-unit id="action.close" resname="action.close">
+        <source>action.close</source>
+        <target>Close</target>
+      </trans-unit>
+      <trans-unit id="action.remove" resname="action.remove">
+        <source>action.remove</source>
+        <target>Take back the choice for “%name%”</target>
+      </trans-unit>
+      <trans-unit id="action.save" resname="action.save">
+        <source>action.save</source>
+        <target>Use this icon</target>
+      </trans-unit>
+      <trans-unit id="breadcrumb.admin" resname="breadcrumb.admin">
+        <source>breadcrumb.admin</source>
+        <target>Admin</target>
+      </trans-unit>
+      <trans-unit id="column.actions" resname="column.actions">
+        <source>column.actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="column.from" resname="column.from">
+        <source>column.from</source>
+        <target>Icon from</target>
+      </trans-unit>
+      <trans-unit id="column.group" resname="column.group">
+        <source>column.group</source>
+        <target>Group</target>
+      </trans-unit>
+      <trans-unit id="column.icon" resname="column.icon">
+        <source>column.icon</source>
+        <target>Icon</target>
+      </trans-unit>
+      <trans-unit id="column.name" resname="column.name">
+        <source>column.name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="filter.from" resname="filter.from">
+        <source>filter.from</source>
+        <target>Icon from</target>
+      </trans-unit>
+      <trans-unit id="filter.from.all" resname="filter.from.all">
+        <source>filter.from.all</source>
+        <target>Anywhere</target>
+      </trans-unit>
+      <trans-unit id="filter.kind" resname="filter.kind">
+        <source>filter.kind</source>
+        <target>Show</target>
+      </trans-unit>
+      <trans-unit id="filter.kind.all" resname="filter.kind.all">
+        <source>filter.kind.all</source>
+        <target>Types and groups</target>
+      </trans-unit>
+      <trans-unit id="flash.removed" resname="flash.removed">
+        <source>flash.removed</source>
+        <target>The choice for “%name%” was taken back.</target>
+      </trans-unit>
+      <trans-unit id="flash.saved" resname="flash.saved">
+        <source>flash.saved</source>
+        <target>The icon of “%name%” was saved.</target>
+      </trans-unit>
+      <trans-unit id="from.admin" resname="from.admin">
+        <source>from.admin</source>
+        <target>Chosen here</target>
+      </trans-unit>
+      <trans-unit id="from.ai" resname="from.ai">
+        <source>from.ai</source>
+        <target>Assistant</target>
+      </trans-unit>
+      <trans-unit id="from.config" resname="from.config">
+        <source>from.config</source>
+        <target>Project configuration</target>
+      </trans-unit>
+      <trans-unit id="from.default" resname="from.default">
+        <source>from.default</source>
+        <target>Suggested</target>
+      </trans-unit>
+      <trans-unit id="from.import" resname="from.import">
+        <source>from.import</source>
+        <target>Imported</target>
+      </trans-unit>
+      <trans-unit id="from.none" resname="from.none">
+        <source>from.none</source>
+        <target>No icon</target>
+      </trans-unit>
+      <trans-unit id="icons.title" resname="icons.title">
+        <source>icons.title</source>
+        <target>Icons</target>
+      </trans-unit>
+      <trans-unit id="ids.clear_btn.label" resname="ids.clear_btn.label">
+        <source>ids.clear_btn.label</source>
+        <target>Clear</target>
+      </trans-unit>
+      <trans-unit id="ids.dropdown.placeholder" resname="ids.dropdown.placeholder">
+        <source>ids.dropdown.placeholder</source>
+        <target>Select an item</target>
+      </trans-unit>
+      <trans-unit id="ids.dropdown.search.placeholder" resname="ids.dropdown.search.placeholder">
+        <source>ids.dropdown.search.placeholder</source>
+        <target>Search…</target>
+      </trans-unit>
+      <trans-unit id="kind.group" resname="kind.group">
+        <source>kind.group</source>
+        <target>Group</target>
+      </trans-unit>
+      <trans-unit id="kind.type" resname="kind.type">
+        <source>kind.type</source>
+        <target>Content type</target>
+      </trans-unit>
+      <trans-unit id="list.empty" resname="list.empty">
+        <source>list.empty</source>
+        <target>There is no content type yet.</target>
+      </trans-unit>
+      <trans-unit id="list.missing" resname="list.missing">
+        <source>list.missing</source>
+        <target>%count% without an icon</target>
+      </trans-unit>
+      <trans-unit id="list.none_found" resname="list.none_found">
+        <source>list.none_found</source>
+        <target>Nothing matches.</target>
+      </trans-unit>
+      <trans-unit id="list.search" resname="list.search">
+        <source>list.search</source>
+        <target>Search a type, a group, an icon…</target>
+      </trans-unit>
+      <trans-unit id="list.search.clear" resname="list.search.clear">
+        <source>list.search.clear</source>
+        <target>Clear the search</target>
+      </trans-unit>
+      <trans-unit id="list.title" resname="list.title">
+        <source>list.title</source>
+        <target>Content types and groups</target>
+      </trans-unit>
+      <trans-unit id="menu.icons" resname="menu.icons">
+        <source>menu.icons</source>
+        <target>Icons</target>
+      </trans-unit>
+      <trans-unit id="picker.count" resname="picker.count">
+        <source>picker.count</source>
+        <target>%shown% of %total% icons</target>
+      </trans-unit>
+      <trans-unit id="picker.current" resname="picker.current">
+        <source>picker.current</source>
+        <target>Now</target>
+      </trans-unit>
+      <trans-unit id="picker.empty" resname="picker.empty">
+        <source>picker.empty</source>
+        <target>No icon matches: try other words.</target>
+      </trans-unit>
+      <trans-unit id="picker.more" resname="picker.more">
+        <source>picker.more</source>
+        <target>Show more</target>
+      </trans-unit>
+      <trans-unit id="picker.nothing" resname="picker.nothing">
+        <source>picker.nothing</source>
+        <target>None yet</target>
+      </trans-unit>
+      <trans-unit id="picker.saving" resname="picker.saving">
+        <source>picker.saving</source>
+        <target>Saving…</target>
+      </trans-unit>
+      <trans-unit id="picker.search" resname="picker.search">
+        <source>picker.search</source>
+        <target>Search an icon: calendar, user, folder…</target>
+      </trans-unit>
+      <trans-unit id="picker.selected" resname="picker.selected">
+        <source>picker.selected</source>
+        <target>Chosen</target>
+      </trans-unit>
+      <trans-unit id="picker.title" resname="picker.title">
+        <source>picker.title</source>
+        <target>Icon of “%name%”</target>
+      </trans-unit>
+      <trans-unit id="ui.assistant" resname="ui.assistant">
+        <source>ui.assistant</source>
+        <target>To give icons to all the types and groups that have none, ask the assistant: “Give an icon to the content types and groups that have none.”</target>
+      </trans-unit>
+      <trans-unit id="ui.failed" resname="ui.failed">
+        <source>ui.failed</source>
+        <target>The request failed.</target>
+      </trans-unit>
+      <trans-unit id="ui.intro" resname="ui.intro">
+        <source>ui.intro</source>
+        <target>The icon of each content type and group, shown in the content tree, the lists of types and the create menu. An icon chosen here is kept: the assistant and the imports never replace it.</target>
+      </trans-unit>
+      <trans-unit id="ui.load_failed" resname="ui.load_failed">
+        <source>ui.load_failed</source>
+        <target>The content types could not be loaded.</target>
+      </trans-unit>
+      <trans-unit id="ui.loading" resname="ui.loading">
+        <source>ui.loading</source>
+        <target>Loading the content types…</target>
+      </trans-unit>
+      <trans-unit id="ui.title" resname="ui.title">
+        <source>ui.title</source>
+        <target>Icons</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,5 @@
+# The icons of the content types and groups. "manage" chooses them: an icon is what people see in the content tree, the lists of types and
+# the create menu.
+masilia_icon:
+    view: ~
+    manage: ~

@@ -1,0 +1,109 @@
+// The icons page. The components are the kit's (@masilia-admin-kit/kit); here is the layout of the page itself.
+@use '@masilia-admin-kit/kit';
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/custom' as ibexa;
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+$line: 1px solid ibexa.$ibexa-color-light;
+$transition: ibexa.$ibexa-admin-transition-duration ibexa.$ibexa-admin-transition;
+
+.masilia-icons-react {
+    display: flex;
+    flex-direction: column;
+    gap: calculateRem(16px);
+    padding: calculateRem(8px) 0 calculateRem(32px);
+    color: ibexa.$ibexa-color-dark;
+    font-size: ibexa.$ibexa-text-font-size;
+
+    code {
+        color: inherit;
+    }
+}
+
+.masilia-icons-muted {
+    margin: 0;
+    color: ibexa.$ibexa-color-dark-400;
+}
+
+.masilia-icons-group {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.masilia-icons-from {
+    color: ibexa.$ibexa-color-dark-500;
+
+    &--none {
+        color: ibexa.$ibexa-color-dark-400;
+    }
+
+    &--admin {
+        color: ibexa.$ibexa-color-dark;
+        font-weight: 600;
+    }
+}
+
+.masilia-icons-picker {
+    display: flex;
+    flex-direction: column;
+    gap: calculateRem(12px);
+
+    &__current {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: calculateRem(8px);
+        margin: 0;
+    }
+
+    &__status {
+        margin-right: auto;
+        color: ibexa.$ibexa-color-dark-400;
+    }
+}
+
+.masilia-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calculateRem(104px), 1fr));
+    gap: calculateRem(8px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calculateRem(4px);
+        width: 100%;
+        padding: calculateRem(12px) calculateRem(4px);
+        border: $line;
+        border-radius: ibexa.$ibexa-border-radius;
+        background: ibexa.$ibexa-color-white;
+        color: ibexa.$ibexa-color-dark;
+        cursor: pointer;
+        transition: border-color $transition, background-color $transition;
+
+        &:hover,
+        &:focus-visible {
+            border-color: ibexa.$ibexa-color-primary;
+        }
+
+        &--current {
+            background: ibexa.$ibexa-color-light-300;
+        }
+
+        &--selected {
+            border-color: ibexa.$ibexa-color-primary;
+            background: ibexa.$ibexa-color-primary-100;
+        }
+    }
+
+    &__name {
+        max-width: 100%;
+        overflow: hidden;
+        color: ibexa.$ibexa-color-dark-500;
+        font-size: calculateRem(11px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

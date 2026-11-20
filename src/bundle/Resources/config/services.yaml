@@ -23,3 +23,10 @@ services:
 
     Masilia\Bundle\IbexaIcons\Command\:
         resource: '../../Command/'
+
+    Masilia\Bundle\IbexaIcons\Controller\:
+        resource: '../../Controller/'
+        tags: ['controller.service_arguments']
+
+    Masilia\Bundle\IbexaIcons\EventListener\CsrfTokenSubscriber: ~
+    Masilia\Bundle\IbexaIcons\EventListener\MainMenuBuilderListener: ~

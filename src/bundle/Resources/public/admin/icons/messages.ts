@@ -1,0 +1,58 @@
+import { createTranslator } from '@masilia-admin-kit/i18n';
+
+/** The texts of the icons page, in English: what shows when the admin has no translation of a key (see the translation files of the bundle). */
+export const DEFAULTS: Readonly<Record<string, string>> = {
+    'ui.title': 'Icons',
+    'ui.intro': 'The icon of each content type and group, shown in the content tree, the lists of types and the create menu. An icon chosen here is kept: the assistant and the imports never replace it.',
+    'ui.assistant': 'To give icons to all the types and groups that have none, ask the assistant: “Give an icon to the content types and groups that have none.”',
+    'ui.loading': 'Loading the content types…',
+    'ui.load_failed': 'The content types could not be loaded.',
+    'ui.failed': 'The request failed.',
+    'list.title': 'Content types and groups',
+    'list.search': 'Search a type, a group, an icon…',
+    'list.search.clear': 'Clear the search',
+    'list.empty': 'There is no content type yet.',
+    'list.none_found': 'Nothing matches.',
+    'list.missing': '%count% without an icon',
+    'filter.kind': 'Show',
+    'filter.kind.all': 'Types and groups',
+    'filter.from': 'Icon from',
+    'filter.from.all': 'Anywhere',
+    'kind.type': 'Content type',
+    'kind.group': 'Group',
+    'from.admin': 'Chosen here',
+    'from.ai': 'Assistant',
+    'from.import': 'Imported',
+    'from.default': 'Suggested',
+    'from.config': 'Project configuration',
+    'from.none': 'No icon',
+    'column.icon': 'Icon',
+    'column.name': 'Name',
+    'column.group': 'Group',
+    'column.from': 'Icon from',
+    'column.actions': 'Actions',
+    'action.choose': 'Choose an icon for “%name%”',
+    'action.remove': 'Take back the choice for “%name%”',
+    'action.save': 'Use this icon',
+    'action.cancel': 'Cancel',
+    'action.close': 'Close',
+    'picker.title': 'Icon of “%name%”',
+    'picker.search': 'Search an icon: calendar, user, folder…',
+    'picker.count': '%shown% of %total% icons',
+    'picker.more': 'Show more',
+    'picker.empty': 'No icon matches: try other words.',
+    'picker.current': 'Now',
+    'picker.selected': 'Chosen',
+    'picker.nothing': 'None yet',
+    'picker.saving': 'Saving…',
+    'flash.saved': 'The icon of “%name%” was saved.',
+    'flash.removed': 'The choice for “%name%” was taken back.',
+    'ids.dropdown.placeholder': 'Select an item',
+    'ids.dropdown.search.placeholder': 'Search…',
+    'ids.clear_btn.label': 'Clear',
+};
+
+export const DOMAIN = 'masilia_ibexa_icons';
+
+/** The translator of the page. */
+export const t = createTranslator(DEFAULTS, DOMAIN);

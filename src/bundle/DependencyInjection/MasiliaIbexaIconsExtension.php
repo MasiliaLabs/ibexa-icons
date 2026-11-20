@@ -33,6 +33,8 @@ final class MasiliaIbexaIconsExtension extends Extension implements PrependExten
                 ],
             ],
         ]);
+        // The texts of the icons page (React) come from the translation domain of this bundle, published to the scripts of the admin.
+        $container->prependExtensionConfig('bazinga_js_translation', ['active_domains' => ['masilia_ibexa_icons']]);
         $container->prependExtensionConfig('doctrine_migrations', [
             'migrations_paths' => [
                 'Masilia\\Bundle\\IbexaIcons\\Migrations' => __DIR__ . '/../Migrations',
