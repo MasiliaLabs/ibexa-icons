@@ -4,6 +4,9 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 
 ## [Unreleased]
 
+### Added
+- Labels (English and French, domain `forms`) for the policies of the module `masilia_icon` in Admin > Roles: `role.policy.masilia_icon` and its functions. Before, the role editor showed the raw keys.
+
 ## [0.1.1] - 2026-11-20
 
 ### Added
