@@ -1,34 +1,10 @@
-{% extends "@ibexadesign/ui/layout.html.twig" %}
+{# The icons page is a React application: it loads its data from the JSON API. It sits in the container of the admin lists (their width, margins and card). #}
+{% extends '@ibexadesign/masilia_kit/page.html.twig' %}
 
 {% trans_default_domain 'masilia_ibexa_icons' %}
 
-{% block body_class %}masilia-icons-view{% endblock %}
-
-{% block stylesheets %}
-    {{ encore_entry_link_tags('ibexa-admin-ui-masilia-icons-react-css', null, 'ibexa') }}
-{% endblock %}
-
-{% block breadcrumbs %}
-    {% include '@ibexadesign/ui/breadcrumbs.html.twig' with { items: [
-        { value: 'breadcrumb.admin'|trans },
-        { value: 'icons.title'|trans }
-    ]} %}
-{% endblock %}
-
-{% block title %}{{ 'icons.title'|trans }}{% endblock %}
-
-{% block header %}
-    {% include '@ibexadesign/ui/page_title.html.twig' with { title: 'icons.title'|trans } %}
-{% endblock %}
-
-{% block content %}
-    {# The container of the admin pages (the width, the margins and the card of every list of the admin), then the React application:
-       it loads its data from the JSON API. #}
-    <section class="container ibexa-container">
-        <div id="masilia-icons-root" data-api="{{ path('masilia.ibexa_icons.api.data') }}"></div>
-    </section>
-{% endblock %}
-
-{% block javascripts %}
-    {{ encore_entry_script_tags('ibexa-admin-ui-masilia-icons-react-js', null, 'ibexa') }}
-{% endblock %}
+{% set kit_title = 'icons.title'|trans %}
+{% set kit_entry = 'masilia-icons-react' %}
+{% set kit_body_class = 'masilia-icons-view' %}
+{% set kit_container = true %}
+{% set kit_root = { id: 'masilia-icons-root', data: { api: path('masilia.ibexa_icons.api.data') } } %}

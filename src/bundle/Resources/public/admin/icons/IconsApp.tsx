@@ -1,9 +1,10 @@
 import React, { useMemo } from 'react';
 
-import { iconPath } from '@masilia-admin-kit/icons';
-import { AssetsProvider, TranslatorProvider } from '@masilia-admin-kit/ids';
+import { AdminProviders } from '@masilia-admin-kit/AdminProviders';
+import { Alert } from '@masilia-admin-kit/Alert';
 import { Notice } from '@masilia-admin-kit/Notice';
 import { Spinner } from '@masilia-admin-kit/Spinner';
+import { Muted } from '@masilia-admin-kit/Layout';
 import { apiBase, createApi } from './api';
 import { IconsList } from './IconsList';
 import { t } from './messages';
@@ -21,9 +22,9 @@ export function IconsApp({ dataUrl }: IconsAppProps): React.ReactElement {
 
     let body: React.ReactElement;
     if (loading) {
-        body = <p className="masilia-icons-muted" role="status"><Spinner label={t('ui.loading')} /> {t('ui.loading')}</p>;
+        body = <p role="status"><Muted><Spinner label={t('ui.loading')} /> {t('ui.loading')}</Muted></p>;
     } else if (failed || data === null) {
-        body = <p className="ibexa-alert ibexa-alert--error" role="alert">{t('ui.load_failed')}</p>;
+        body = <Alert type="error" title={t('ui.load_failed')} />;
     } else {
         body = (
             <>
@@ -34,13 +35,9 @@ export function IconsApp({ dataUrl }: IconsAppProps): React.ReactElement {
     }
 
     return (
-        <TranslatorProvider value={{ trans: (id) => t(id) }}>
-            <AssetsProvider value={{ getIconPath: iconPath }}>
-                <div className="masilia-icons-react">
-                    <Notice>{t('ui.intro')}</Notice>
-                    {body}
-                </div>
-            </AssetsProvider>
-        </TranslatorProvider>
+        <AdminProviders t={t} className="masilia-icons-react">
+            <Notice>{t('ui.intro')}</Notice>
+            {body}
+        </AdminProviders>
     );
 }

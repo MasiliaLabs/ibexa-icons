@@ -7,6 +7,7 @@ import { notify } from '@masilia-admin-kit/notify';
 import { SearchInput } from '@masilia-admin-kit/SearchInput';
 import { DataTable, TableHeader } from '@masilia-admin-kit/Table';
 import type { Column } from '@masilia-admin-kit/Table';
+import { Muted } from '@masilia-admin-kit/Layout';
 import type { Api } from './api';
 import { IconPicker } from './IconPicker';
 import { t } from './messages';
@@ -63,7 +64,7 @@ export function IconsList({ api, data, onChange }: IconsListProps): React.ReactE
         {
             key: 'icon',
             header: <span className="masilia-kit-sr-only">{t('column.icon')}</span>,
-            render: (item) => (item.icon !== null ? <IconSvg name={item.icon} size="medium" /> : <span className="masilia-icons-muted" aria-label={t('from.none')}>—</span>),
+            render: (item) => (item.icon !== null ? <IconSvg name={item.icon} size="medium" /> : <Muted><span aria-label={t('from.none')}>—</span></Muted>),
         },
         {
             key: 'name',
@@ -72,11 +73,11 @@ export function IconsList({ api, data, onChange }: IconsListProps): React.ReactE
                 <>
                     <strong className={item.kind === 'group' ? 'masilia-icons-group' : undefined}>{item.name}</strong>
                     <br />
-                    <span className="masilia-icons-muted">{item.kind === 'group' ? t('kind.group') : item.identifier}{item.icon !== null ? ` · ${item.icon}` : ''}</span>
+                    <Muted>{item.kind === 'group' ? t('kind.group') : item.identifier}{item.icon !== null ? ` · ${item.icon}` : ''}</Muted>
                 </>
             ),
         },
-        { key: 'group', header: t('column.group'), render: (item) => (item.group === '' ? <span className="masilia-icons-muted">—</span> : item.group) },
+        { key: 'group', header: t('column.group'), render: (item) => (item.group === '' ? <Muted>—</Muted> : item.group) },
         { key: 'from', header: t('column.from'), render: (item) => <span className={`masilia-icons-from masilia-icons-from--${item.source}`}>{t(`from.${item.source}`)}</span> },
         ...(data.canManage ? [{
             key: 'actions',

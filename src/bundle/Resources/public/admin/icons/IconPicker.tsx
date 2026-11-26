@@ -5,6 +5,8 @@ import { IconSvg } from '@masilia-admin-kit/IconSvg';
 import { Button } from '@masilia-admin-kit/ids';
 import { SearchInput } from '@masilia-admin-kit/SearchInput';
 import { Spinner } from '@masilia-admin-kit/Spinner';
+import { FormError } from '@masilia-admin-kit/FormError';
+import { Muted } from '@masilia-admin-kit/Layout';
 import { t } from './messages';
 import { page, searchIcons } from './pickerSearch';
 import type { ItemDto } from './types';
@@ -48,13 +50,13 @@ export function IconPicker({ item, icons, saving, error, onChoose, onClose }: Ic
             <div className="masilia-icons-picker">
                 <p className="masilia-icons-picker__current">
                     <span>{t('picker.current')}:</span>{' '}
-                    {item.icon !== null ? <><IconSvg name={item.icon} size="medium" /> <code>{item.icon}</code></> : <span className="masilia-icons-muted">{t('picker.nothing')}</span>}
+                    {item.icon !== null ? <><IconSvg name={item.icon} size="medium" /> <code>{item.icon}</code></> : <Muted>{t('picker.nothing')}</Muted>}
                     {selected !== null ? <> <span aria-hidden="true">→</span> <span>{t('picker.selected')}:</span> <IconSvg name={selected} size="medium" /> <code>{selected}</code></> : null}
                 </p>
-                {error !== undefined ? <p className="ibexa-form-error__row" role="alert">{error}</p> : null}
+                {error !== undefined ? <FormError>{error}</FormError> : null}
                 <SearchInput value={query} onChange={(value) => { setQuery(value); setLimit(PAGE); }} placeholder={t('picker.search')} clearLabel={t('list.search.clear')} />
-                <p className="masilia-icons-muted" role="status">{t('picker.count', { shown: shown.length, total: found.length })}</p>
-                {found.length === 0 ? <p className="masilia-icons-muted">{t('picker.empty')}</p> : (
+                <p role="status"><Muted>{t('picker.count', { shown: shown.length, total: found.length })}</Muted></p>
+                {found.length === 0 ? <p><Muted>{t('picker.empty')}</Muted></p> : (
                     <ul className="masilia-icons-grid" aria-label={t('picker.title', { name: item.name })}>
                         {shown.map((name) => (
                             <li key={name}>

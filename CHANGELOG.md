@@ -4,6 +4,9 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 
 ## [Unreleased]
 
+### Changed
+- Admin: the page is built on the components and the page template of `masilia/ibexa-admin-kit` (alerts, the error row, the providers, the grey text, the page skeleton): no `ibexa-*` class is written here any more. The grey text is a little smaller, as the kit draws it. **It needs the release of the kit that has them** (`masilia/ibexa-admin-kit` after 0.1.6).
+
 ## [0.1.2] - 2026-11-22
 
 ### Added
