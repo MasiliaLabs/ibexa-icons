@@ -92,7 +92,7 @@
       </trans-unit>
       <trans-unit id="icons.title" resname="icons.title">
         <source>icons.title</source>
-        <target>Icônes</target>
+        <target>Gestionnaire d&#x27;icônes de contenu</target>
       </trans-unit>
       <trans-unit id="ids.clear_btn.label" resname="ids.clear_btn.label">
         <source>ids.clear_btn.label</source>
@@ -200,7 +200,7 @@
       </trans-unit>
       <trans-unit id="ui.title" resname="ui.title">
         <source>ui.title</source>
-        <target>Icônes</target>
+        <target>Gestionnaire d&#x27;icônes de contenu</target>
       </trans-unit>
     </body>
   </file>

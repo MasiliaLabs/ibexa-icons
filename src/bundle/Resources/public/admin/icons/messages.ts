@@ -2,7 +2,7 @@ import { createTranslator } from '@masilia-admin-kit/i18n';
 
 /** The texts of the icons page, in English: what shows when the admin has no translation of a key (see the translation files of the bundle). */
 export const DEFAULTS: Readonly<Record<string, string>> = {
-    'ui.title': 'Icons',
+    'ui.title': 'Content icons manager',
     'ui.intro': 'The icon of each content type and group, shown in the content tree, the lists of types and the create menu. An icon chosen here is kept: the assistant and the imports never replace it.',
     'ui.assistant': 'To give icons to all the types and groups that have none, ask the assistant: “Give an icon to the content types and groups that have none.”',
     'ui.loading': 'Loading the content types…',
