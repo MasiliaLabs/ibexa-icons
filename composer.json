@@ -31,7 +31,7 @@
         "doctrine/orm": "^2.20 || ^3.0",
         "ibexa/admin-ui": "^5.0",
         "ibexa/core": "^5.0",
-        "masilia/ibexa-admin-kit": "^0.1.4",
+        "masilia/ibexa-admin-kit": "^0.2",
         "psr/cache": "^3.0",
         "symfony/config": "^7.4",
         "symfony/console": "^7.4",
@@ -47,7 +47,7 @@
         "symfony/yaml": "^7.4"
     },
     "require-dev": {
-        "masilia/ibexa-ai": "^2.4",
+        "masilia/ibexa-ai": "^3.0",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^11.5",
         "symfony/cache": "^7.4"
@@ -77,7 +77,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "0.1.x-dev"
+            "dev-main": "0.2.x-dev"
         }
     },
     "suggest": {

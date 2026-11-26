@@ -169,7 +169,7 @@ New versions are announced as **GitHub releases**, with their notes taken from t
 
 ## Support
 
-[GitHub issues](https://github.com/MasiliaLabs/ibexa-icons/issues). Security: see [SECURITY.md](SECURITY.md). Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md).
+[GitHub issues](https://github.com/MasiliaLabs/ibexa-icons/issues). Upgrading across a breaking change: [UPGRADE.md](UPGRADE.md). Security: see [SECURITY.md](SECURITY.md). Contributions: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

@@ -4,9 +4,13 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-26
+
 ### Changed
+- **Breaking:** requires `masilia/ibexa-admin-kit` `^0.2` (it was `^0.1`); update the two together, see [UPGRADE.md](UPGRADE.md).
+- The development dependency on `masilia/ibexa-ai` is `^3.0` (it was `^2.4`), because `ibexa-ai` 3 is the one that works with the kit 0.2; the package still only suggests it.
 - The entry of the **Admin** menu is **Content icons manager** (was "Icons"); in French, "Gestionnaire d'icônes de contenu". The title of the page (heading, breadcrumb and browser tab) is the same.
-- Admin: the page is built on the components and the page template of `masilia/ibexa-admin-kit` (alerts, the error row, the providers, the grey text, the page skeleton): no `ibexa-*` class is written here any more. The grey text is a little smaller, as the kit draws it, and the first breadcrumb is the admin's own "Admin" (it was "Administration" in French). **It needs the release of the kit that has them** (`masilia/ibexa-admin-kit` after 0.1.6).
+- Admin: the page is built on the components and the page template of `masilia/ibexa-admin-kit` (alerts, the error row, the providers, the grey text, the page skeleton): no `ibexa-*` class is written here any more. The grey text is a little smaller, as the kit draws it, and the first breadcrumb is the admin's own "Admin" (it was "Administration" in French). It needs `masilia/ibexa-admin-kit` `^0.2`.
 
 ## [0.1.2] - 2026-11-22
 
@@ -27,7 +31,8 @@ All notable changes to `masilia/ibexa-icons` are documented here. The format fol
 - The page Admin > Icons: the content types and groups with their icon and its origin, filters, and a panel to choose an icon among those of Ibexa. Policies `masilia_icon/view` and `masilia_icon/manage`, JSON API under `/api/masilia/icons`, texts in English and French.
 - Assistant capabilities `icons.list`, `icons.search` and `icons.set` when `masilia/ibexa-ai` is installed. A choice made in the admin is never replaced by the assistant, an import or the defaults.
 
-[Unreleased]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.2.0...HEAD
+[0.2.0]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.2...0.2.0
 [0.1.2]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/MasiliaLabs/ibexa-icons/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/MasiliaLabs/ibexa-icons/releases/tag/0.1.0
