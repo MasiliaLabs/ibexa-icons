@@ -22,10 +22,6 @@
         <source>action.save</source>
         <target>Use this icon</target>
       </trans-unit>
-      <trans-unit id="breadcrumb.admin" resname="breadcrumb.admin">
-        <source>breadcrumb.admin</source>
-        <target>Admin</target>
-      </trans-unit>
       <trans-unit id="column.actions" resname="column.actions">
         <source>column.actions</source>
         <target>Actions</target>
