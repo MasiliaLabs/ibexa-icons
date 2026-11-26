@@ -10,7 +10,7 @@ use Knp\Menu\ItemInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 
-/** "Icons" under the Admin group of the Ibexa sidebar, for those who may see the icons. */
+/** "Content icons manager" under the Admin group of the Ibexa sidebar, for those who may see the icons. */
 final readonly class MainMenuBuilderListener implements EventSubscriberInterface
 {
     public function __construct(private AuthorizationCheckerInterface $authorization)

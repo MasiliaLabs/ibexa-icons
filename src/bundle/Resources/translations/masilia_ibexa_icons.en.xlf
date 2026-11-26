@@ -140,7 +140,7 @@
       </trans-unit>
       <trans-unit id="menu.icons" resname="menu.icons">
         <source>menu.icons</source>
-        <target>Icons</target>
+        <target>Content icons manager</target>
       </trans-unit>
       <trans-unit id="picker.count" resname="picker.count">
         <source>picker.count</source>

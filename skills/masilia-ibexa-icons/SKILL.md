@@ -11,7 +11,7 @@ Ibexa reads the icon of a type from `content_type.<identifier>.thumbnail` (and o
 `composer require masilia/ibexa-icons`; enable `MasiliaIbexaIconsBundle` (Flex does it); import `@MasiliaIbexaIconsBundle/Resources/config/routes.yaml`; `php bin/console doctrine:migrations:migrate`; `cache:clear`; `yarn ibexa-generate-tsconfig`; `bazinga:js-translation:dump public/assets --merge-domains`; `php bin/console ibexa:encore:compile`; give a role `masilia_icon/view` and `masilia_icon/manage`. Needs `MasiliaIbexaAdminKitBundle`. Inside DDEV prefix with `ddev exec`.
 
 ## Everyday work
-- Admin > **Icons** (`/icons`): list, filters, and a panel to choose an icon among those of Ibexa. The browser caches the admin scripts: hard reload after a rebuild.
+- Admin > **Content icons manager** (`/icons`): list, filters, and a panel to choose an icon among those of Ibexa. The browser caches the admin scripts: hard reload after a rebuild.
 - See what has an icon: `masilia:icons:list [--missing] [--json]`. "From" says who chose it: `admin`, `ai`, `import`, `default`, `config` (YAML of the project, read in the scope of the siteaccess: add `--siteaccess=admin`), `none` (Ibexa shows its default icon).
 - Set one: `masilia:icons:set type <identifier> <icon>` or `masilia:icons:set group "<Group name>" <icon>`. A wrong name is refused with the closest ones.
 - Bring an old file: `masilia:icons:import <file.yaml> [--dry-run]`; types that do not exist in the repository are listed as skipped.

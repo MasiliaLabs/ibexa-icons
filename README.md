@@ -7,7 +7,7 @@ In Ibexa the icon of a content type is a setting of the configuration (`content_
 ## Features
 
 - **A registry of icons** (`masilia_icon` table): the icon of each content type and group, and who chose it (`admin`, `ai`, `import`, `default`). Ibexa reads it through its own configuration resolvers: the admin shows the icon in the content tree, the lists of types and the create menu at once, without clearing the cache.
-- **An admin page** (Admin > Icons): every content type and group with its icon and where it comes from, a filter bar, and a panel with the icons of Ibexa to choose from (search by name, grid of symbols). Built with `masilia/ibexa-admin-kit`; policies `masilia_icon/view` and `masilia_icon/manage`.
+- **An admin page** (Admin > Content icons manager): every content type and group with its icon and where it comes from, a filter bar, and a panel with the icons of Ibexa to choose from (search by name, grid of symbols). Built with `masilia/ibexa-admin-kit`; policies `masilia_icon/view` and `masilia_icon/manage`.
 - **Detection**: `masilia:icons:list` lists every content type and group of the repository with its icon and where it comes from (the registry, the YAML of the project, or nothing).
 - **The icon set of Ibexa**: only the name of a symbol of its SVG sprite is kept; the names are checked against the sprite (a typo gets the closest names), and the path of the sprite is in one place of the package.
 - **Import**: `masilia:icons:import` brings the thumbnails of an existing Ibexa YAML file into the registry.
@@ -83,7 +83,7 @@ Then `composer require masilia/ibexa-icons` enables the bundle and writes `confi
 
 ## Usage
 
-Open **Admin > Icons**: search or filter the list (by type or group, by where the icon comes from), choose the pencil on a row, search the icon set by name, pick a symbol and save. The change shows in the content tree at once. The other button takes a choice back: the YAML of the project, then Ibexa's default icon, answer again.
+Open **Admin > Content icons manager**: search or filter the list (by type or group, by where the icon comes from), choose the pencil on a row, search the icon set by name, pick a symbol and save. The change shows in the content tree at once. The other button takes a choice back: the YAML of the project, then Ibexa's default icon, answer again.
 
 From the console:
 
